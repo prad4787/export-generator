@@ -1,0 +1,64 @@
+{
+    "name": "export-generator",
+    "displayName": "Export Generator",
+    "description": "Generate index.ts exports for TypeScript folders automatically",
+    "version": "0.0.1",
+    "publisher": "your-publisher-name",
+    "author": {
+        "name": "Pradip Parajuli",
+        "email": "prad4787@gmail.com"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/your-username/export-generator"
+    },
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "categories": [
+        "Other",
+        "Programming Languages",
+        "Snippets"
+    ],
+    "keywords": [
+        "typescript",
+        "exports",
+        "generator",
+        "index",
+        "barrel"
+    ],
+    "icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#C80000",
+        "theme": "dark"
+    },
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [{
+            "command": "export-generator.generateExports",
+            "title": "Generate Single Expose Point"
+        }],
+        "menus": {
+            "explorer/context": [{
+                "when": "explorerResourceIsFolder",
+                "command": "export-generator.generateExports",
+                "group": "export-generator"
+            }]
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "package": "vsce package",
+        "publish": "vsce publish"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.80.0",
+        "@types/node": "^22.10.2",
+        "typescript": "^5.7.2",
+        "@vscode/vsce": "^3.2.1"
+    }
+}
