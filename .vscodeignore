@@ -1,0 +1,75 @@
+# Source files
+src/**
+.github/**
+images/*.psd
+**/*.map
+
+# Development files
+.gitignore
+.gitattributes
+.editorconfig
+.eslintrc.json
+.prettierrc
+.prettierignore
+tsconfig.json
+webpack.config.js
+jest.config.js
+**/tsconfig.json
+**/*.map
+
+# Tests
+test/**
+**/*.spec.ts
+**/*.test.ts
+.vscode-test/**
+
+# Node modules
+node_modules/**
+.npm/**
+
+# Build process
+.github/**
+.travis.yml
+azure-pipelines.yml
+.gitlab-ci.yml
+.jenkins.yml
+
+# Documentation and examples
+docs/**
+examples/**
+CHANGELOG.md
+CONTRIBUTING.md
+README.md
+**/README.md
+**/*.md
+!README.md
+!LICENSE.md
+
+# Misc development files
+.vscode/**
+.idea/**
+.vs/**
+tmp/**
+temp/**
+
+# Debug files
+**/*.vsix
+**/*.log
+**/*.tsbuildinfo
+
+# Version control
+.git/**
+.gitignore
+.gitattributes
+
+# Scripts
+scripts/**
+**/test/**
+**/tests/**
+
+# Configuration files
+.npmrc
+.nvmrc
+.yarnrc
+package-lock.json
+yarn.lock

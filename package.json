@@ -3,7 +3,7 @@
     "displayName": "Export Generator",
     "description": "Generate index.ts exports for TypeScript folders automatically",
     "version": "0.0.1",
-    "publisher": "your-publisher-name",
+    "publisher": "PradipParajuli",
     "author": {
         "name": "Pradip Parajuli",
         "email": "prad4787@gmail.com"
@@ -11,7 +11,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/your-username/export-generator"
+        "url": "https://github.com/prad4787/export-generator"
     },
     "engines": {
         "vscode": "^1.80.0"
@@ -33,6 +33,7 @@
         "color": "#C80000",
         "theme": "dark"
     },
+    
     "activationEvents": [],
     "main": "./out/extension.js",
     "contributes": {
