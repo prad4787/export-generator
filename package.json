@@ -1,7 +1,7 @@
 {
-    "name": "export-generator",
-    "displayName": "Export Generator",
-    "description": "Generate index.ts exports for TypeScript folders automatically",
+    "name": "auto-export-manager",
+    "displayName": "Auto Export Manager",
+    "description": "Automatically generate index files with exports for JavaScript and TypeScript folders, supporting both ES Modules and CommonJS",
     "version": "0.0.1",
     "publisher": "PradipParajuli",
     "author": {
@@ -17,35 +17,37 @@
         "vscode": "^1.80.0"
     },
     "categories": [
-        "Other",
         "Programming Languages",
-        "Snippets"
+        "Formatters",
+        "Other"
     ],
     "keywords": [
-        "typescript",
-        "exports",
-        "generator",
+        "export",
         "index",
-        "barrel"
+        "typescript",
+        "javascript",
+        "commonjs",
+        "esm",
+        "module"
     ],
     "icon": "images/icon.png",
     "galleryBanner": {
         "color": "#C80000",
         "theme": "dark"
     },
-    
     "activationEvents": [],
-    "main": "./out/extension.js",
+    "main": "./out/src/extension.js",
     "contributes": {
         "commands": [{
-            "command": "export-generator.generateExports",
-            "title": "Generate Single Expose Point"
+            "command": "auto-export-manager.generateExports",
+            "title": "Generate Index Exports",
+            "category": "Auto Export Manager"
         }],
         "menus": {
             "explorer/context": [{
                 "when": "explorerResourceIsFolder",
-                "command": "export-generator.generateExports",
-                "group": "export-generator"
+                "command": "auto-export-manager.generateExports",
+                "group": "auto-export-manager"
             }]
         }
     },
