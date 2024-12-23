@@ -1,8 +1,8 @@
 {
-    "name": "auto-export-manager",
+    "name": "export-generator",
     "displayName": "Auto Export Manager",
     "description": "Automatically generate index files with exports for JavaScript and TypeScript folders, supporting both ES Modules and CommonJS",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "PradipParajuli",
     "author": {
         "name": "Pradip Parajuli",
@@ -39,15 +39,15 @@
     "main": "./out/src/extension.js",
     "contributes": {
         "commands": [{
-            "command": "auto-export-manager.generateExports",
+            "command": "export-generator.generateExports",
             "title": "Generate Index Exports",
             "category": "Auto Export Manager"
         }],
         "menus": {
             "explorer/context": [{
                 "when": "explorerResourceIsFolder",
-                "command": "auto-export-manager.generateExports",
-                "group": "auto-export-manager"
+                "command": "export-generator.generateExports",
+                "group": "export-generator"
             }]
         }
     },

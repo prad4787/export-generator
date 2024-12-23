@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 export function activate(context: vscode.ExtensionContext) {
-    let disposable = vscode.commands.registerCommand('auto-export-manager.generateExports', async (uri: vscode.Uri) => {
+    let disposable = vscode.commands.registerCommand('export-generator.generateExports', async (uri: vscode.Uri) => {
         if (!uri) {
             uri = vscode.workspace.workspaceFolders?.[0].uri!;
         }
